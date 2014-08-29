@@ -2368,7 +2368,6 @@ In [28]:
 
 <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">it</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">dfContacts</span><span class="o">.</span><span class="n">location</span><span class="p">):</span>
     <span class="k">try</span><span class="p">:</span> <span class="c"># Avoids interrupting the loop by time-out errors</span>
-        <span class="c"># I am not so sure about if this is the correct way to handle it</span>
         <span class="n">location</span> <span class="o">=</span> <span class="n">geolocator</span><span class="o">.</span><span class="n">geocode</span><span class="p">(</span><span class="n">dfContacts</span><span class="o">.</span><span class="n">location</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">'utf-8'</span><span class="p">))</span>
     <span class="k">except</span><span class="p">:</span>
        <span class="n">location</span> <span class="o">=</span> <span class="bp">None</span>
@@ -2545,9 +2544,7 @@ In [61]:
         <span class="n">loc</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">dfContacts</span><span class="o">.</span><span class="n">location</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span><span class="o">.</span><span class="n">decode</span><span class="p">())</span>
     <span class="k">except</span><span class="p">:</span>
         <span class="n">loc</span> <span class="o">=</span> <span class="s">"unknown"</span>
-    <span class="c">#print name</span>
     <span class="k">if</span> <span class="ow">not</span><span class="p">(</span><span class="n">isnan</span><span class="p">(</span><span class="n">lat</span><span class="p">))</span> <span class="ow">and</span> <span class="ow">not</span><span class="p">(</span><span class="n">isnan</span><span class="p">(</span><span class="n">lon</span><span class="p">)):</span>
-        <span class="c">#print dfContacts.location[idx].encode('utf-8')</span>
         <span class="n">mapContacts</span><span class="o">.</span><span class="n">polygon_marker</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">],</span>
                                   <span class="n">radius</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span>
                                   <span class="n">line_color</span><span class="o">=</span><span class="s">'#0063db'</span><span class="p">,</span> 
@@ -2636,7 +2633,6 @@ In []:
 
 <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">it</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">dfContacts</span><span class="o">.</span><span class="n">location</span><span class="p">):</span>
     <span class="k">try</span><span class="p">:</span> <span class="c"># Avoids interrupting the loop by time-out errors</span>
-        <span class="c"># I am not so sure about if this is the correct way to handle it</span>
         <span class="n">location</span> <span class="o">=</span> <span class="n">geolocator</span><span class="o">.</span><span class="n">geocode</span><span class="p">(</span><span class="n">dfContacts</span><span class="o">.</span><span class="n">location</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">'utf-8'</span><span class="p">))</span>
     <span class="k">except</span><span class="p">:</span>
        <span class="n">location</span> <span class="o">=</span> <span class="bp">None</span>
@@ -2685,9 +2681,7 @@ In [89]:
         <span class="n">loc</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">dfContacts</span><span class="o">.</span><span class="n">location</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span><span class="o">.</span><span class="n">decode</span><span class="p">())</span>
     <span class="k">except</span><span class="p">:</span>
         <span class="n">loc</span> <span class="o">=</span> <span class="s">"unknown"</span>
-    <span class="c">#print name</span>
     <span class="k">if</span> <span class="ow">not</span><span class="p">(</span><span class="n">isnan</span><span class="p">(</span><span class="n">lat</span><span class="p">))</span> <span class="ow">and</span> <span class="ow">not</span><span class="p">(</span><span class="n">isnan</span><span class="p">(</span><span class="n">lon</span><span class="p">)):</span>
-        <span class="c">#print dfContacts.location[idx].encode('utf-8')</span>
         <span class="n">mapContacts</span><span class="o">.</span><span class="n">polygon_marker</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">],</span>
                                   <span class="n">radius</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span>
                                   <span class="n">line_color</span><span class="o">=</span><span class="s">'#0063db'</span><span class="p">,</span> 
