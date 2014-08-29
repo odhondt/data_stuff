@@ -1,0 +1,4806 @@
+<!DOCTYPE html>
+<head>
+   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
+   <script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
+   <script src="leaflet-dvf.markers.min.js"></script>
+   
+   
+   
+
+
+<style>
+
+#map {
+  position:absolute;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+}
+
+</style>
+</head>
+<body>
+
+        <div id="map" style="width: 700px; height: 500px"></div>
+
+<script>
+
+
+
+var map = L.map('map').setView([10, 0], 2);
+
+L.tileLayer('http://{s}.tile.thunderforest.com/landscape/{z}/{x}/{y}.png', {
+    maxZoom: 18,
+    attribution: '&copy; <a href="http://www.opencyclemap.org">OpenCycleMap</a>,                          &copy; <a href="http://openstreetmap.org">OpenStreetMap</a>                          contributors,                          <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'
+}).addTo(map);
+
+
+var polygon_1 = new L.RegularPolygonMarker(new L.LatLng(37.7789601, -122.419199), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_1._latlng = polygon_1._centerLatLng
+polygon_1.bindPopup("*Cinnamon (San Francisco, USA)");
+map.addLayer(polygon_1)
+
+var polygon_2 = new L.RegularPolygonMarker(new L.LatLng(45.5643442, 17.0118954), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_2._latlng = polygon_2._centerLatLng
+polygon_2.bindPopup("*December Sun (Croatia)");
+map.addLayer(polygon_2)
+
+var polygon_3 = new L.RegularPolygonMarker(new L.LatLng(45.4666211, 9.1906166), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_3._latlng = polygon_3._centerLatLng
+polygon_3.bindPopup("*eduardoa* (Milan, Italy)");
+map.addLayer(polygon_3)
+
+var polygon_4 = new L.RegularPolygonMarker(new L.LatLng(61.0666922, -107.9917071), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_4._latlng = polygon_4._centerLatLng
+polygon_4.bindPopup("*green leaves* (Canada)");
+map.addLayer(polygon_4)
+
+var polygon_5 = new L.RegularPolygonMarker(new L.LatLng(60.1713198, 24.9414566), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_5._latlng = polygon_5._centerLatLng
+polygon_5.bindPopup("*laikanet* (Helsinki, Finland)");
+map.addLayer(polygon_5)
+
+var polygon_6 = new L.RegularPolygonMarker(new L.LatLng(-33.8548157, 151.2164539), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_6._latlng = polygon_6._centerLatLng
+polygon_6.bindPopup("-bos[s]- (Sydney, Australia)");
+map.addLayer(polygon_6)
+
+var polygon_7 = new L.RegularPolygonMarker(new L.LatLng(61.0666922, -107.9917071), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_7._latlng = polygon_7._centerLatLng
+polygon_7.bindPopup("-liyen- (Canada)");
+map.addLayer(polygon_7)
+
+var polygon_8 = new L.RegularPolygonMarker(new L.LatLng(52.5170365, 13.3888599), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_8._latlng = polygon_8._centerLatLng
+polygon_8.bindPopup("-Migue!- (Berlin, Alemania)");
+map.addLayer(polygon_8)
+
+var polygon_9 = new L.RegularPolygonMarker(new L.LatLng(21.304547, -157.8556764), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_9._latlng = polygon_9._centerLatLng
+polygon_9.bindPopup("1ragincajun (Honolulu)");
+map.addLayer(polygon_9)
+
+var polygon_10 = new L.RegularPolygonMarker(new L.LatLng(61.0666922, -107.9917071), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_10._latlng = polygon_10._centerLatLng
+polygon_10.bindPopup("712_ (Canada)");
+map.addLayer(polygon_10)
+
+var polygon_11 = new L.RegularPolygonMarker(new L.LatLng(52.4009818, 13.0622213), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_11._latlng = polygon_11._centerLatLng
+polygon_11.bindPopup("96dpi (Potsdam, Germany)");
+map.addLayer(polygon_11)
+
+var polygon_12 = new L.RegularPolygonMarker(new L.LatLng(48.1372719, 11.5754815), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_12._latlng = polygon_12._centerLatLng
+polygon_12.bindPopup("[m]apugrafie (Munich, Germany)");
+map.addLayer(polygon_12)
+
+var polygon_13 = new L.RegularPolygonMarker(new L.LatLng(-40.5740489, -73.1359325), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_13._latlng = polygon_13._centerLatLng
+polygon_13.bindPopup("[p.thiers] (osorno, Chile)");
+map.addLayer(polygon_13)
+
+var polygon_14 = new L.RegularPolygonMarker(new L.LatLng(50.9025349, -1.404189), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_14._latlng = polygon_14._centerLatLng
+polygon_14.bindPopup("[Photom] (Southampton, UK)");
+map.addLayer(polygon_14)
+
+var polygon_15 = new L.RegularPolygonMarker(new L.LatLng(55.6867243, 12.5700724), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_15._latlng = polygon_15._centerLatLng
+polygon_15.bindPopup("_EdG_ (Copenhagen, Denmark)");
+map.addLayer(polygon_15)
+
+var polygon_16 = new L.RegularPolygonMarker(new L.LatLng(53.7589831, 87.1375029), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_16._latlng = polygon_16._centerLatLng
+polygon_16.bindPopup("_Ivan_M_ (Novokuznetsk, RUSSIA)");
+map.addLayer(polygon_16)
+
+var polygon_17 = new L.RegularPolygonMarker(new L.LatLng(41.8932575, 12.4830619), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_17._latlng = polygon_17._centerLatLng
+polygon_17.bindPopup("_TooL_ (Roma, Italia)");
+map.addLayer(polygon_17)
+
+var polygon_18 = new L.RegularPolygonMarker(new L.LatLng(54.8981112, 23.9113098), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_18._latlng = polygon_18._centerLatLng
+polygon_18.bindPopup("unknown (Kaunas, Lithuania)");
+map.addLayer(polygon_18)
+
+var polygon_19 = new L.RegularPolygonMarker(new L.LatLng(13.444138, 144.733626446), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_19._latlng = polygon_19._centerLatLng
+polygon_19.bindPopup("a.m.medina (Guam)");
+map.addLayer(polygon_19)
+
+var polygon_20 = new L.RegularPolygonMarker(new L.LatLng(39.7837304, -100.4458825), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_20._latlng = polygon_20._centerLatLng
+polygon_20.bindPopup("adamcurry (USA)");
+map.addLayer(polygon_20)
+
+var polygon_21 = new L.RegularPolygonMarker(new L.LatLng(40.0149856, -105.2705456), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_21._latlng = polygon_21._centerLatLng
+polygon_21.bindPopup("Aidan M. Grey (Boulder, Colorado, US)");
+map.addLayer(polygon_21)
+
+var polygon_22 = new L.RegularPolygonMarker(new L.LatLng(-33.4379935, -70.6503976), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_22._latlng = polygon_22._centerLatLng
+polygon_22.bindPopup("Alejandro Bonilla (Santiago, Chile)");
+map.addLayer(polygon_22)
+
+var polygon_23 = new L.RegularPolygonMarker(new L.LatLng(46.2017559, 6.1466014), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_23._latlng = polygon_23._centerLatLng
+polygon_23.bindPopup("Alejandro Melero Carrillo (unknown)");
+map.addLayer(polygon_23)
+
+var polygon_24 = new L.RegularPolygonMarker(new L.LatLng(64.6863136, 97.7453061), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_24._latlng = polygon_24._centerLatLng
+polygon_24.bindPopup("aleshurik (Russia)");
+map.addLayer(polygon_24)
+
+var polygon_25 = new L.RegularPolygonMarker(new L.LatLng(52.5170365, 13.3888599), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_25._latlng = polygon_25._centerLatLng
+polygon_25.bindPopup("Alexander Rentsch (Berlin, Deutschland)");
+map.addLayer(polygon_25)
+
+var polygon_26 = new L.RegularPolygonMarker(new L.LatLng(37.9841493, 23.7279843), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_26._latlng = polygon_26._centerLatLng
+polygon_26.bindPopup("alexcoitus (athens, greece)");
+map.addLayer(polygon_26)
+
+var polygon_27 = new L.RegularPolygonMarker(new L.LatLng(53.0758099, 8.80717), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_27._latlng = polygon_27._centerLatLng
+polygon_27.bindPopup("aluedt (Bremen, Deutschland)");
+map.addLayer(polygon_27)
+
+var polygon_28 = new L.RegularPolygonMarker(new L.LatLng(48.4004927, 2.7176967), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_28._latlng = polygon_28._centerLatLng
+polygon_28.bindPopup("amador_emmanuel34 (Avon, France)");
+map.addLayer(polygon_28)
+
+var polygon_29 = new L.RegularPolygonMarker(new L.LatLng(35.5309166, 139.7029204), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_29._latlng = polygon_29._centerLatLng
+polygon_29.bindPopup("Amgkt (Kawasaki, Japan)");
+map.addLayer(polygon_29)
+
+var polygon_30 = new L.RegularPolygonMarker(new L.LatLng(52.5170365, 13.3888599), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_30._latlng = polygon_30._centerLatLng
+polygon_30.bindPopup("AnaTamez (Berlin, DE)");
+map.addLayer(polygon_30)
+
+var polygon_31 = new L.RegularPolygonMarker(new L.LatLng(53.4791466, -2.2447445), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_31._latlng = polygon_31._centerLatLng
+polygon_31.bindPopup("Andrew P Brooks (Manchester, United Kingdom)");
+map.addLayer(polygon_31)
+
+var polygon_32 = new L.RegularPolygonMarker(new L.LatLng(41.3870186, 2.1700437), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_32._latlng = polygon_32._centerLatLng
+polygon_32.bindPopup("angelsgermain (Barcelona)");
+map.addLayer(polygon_32)
+
+var polygon_33 = new L.RegularPolygonMarker(new L.LatLng(50.061892, 19.9368564), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_33._latlng = polygon_33._centerLatLng
+polygon_33.bindPopup("anna gawlak (unknown)");
+map.addLayer(polygon_33)
+
+var polygon_34 = new L.RegularPolygonMarker(new L.LatLng(58.424756, 44.2533273), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_34._latlng = polygon_34._centerLatLng
+polygon_34.bindPopup("Anna Koutouzi (kos)");
+map.addLayer(polygon_34)
+
+var polygon_35 = new L.RegularPolygonMarker(new L.LatLng(40.7305991, -73.9865812), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_35._latlng = polygon_35._centerLatLng
+polygon_35.bindPopup("anniebee (New York City, USA)");
+map.addLayer(polygon_35)
+
+var polygon_36 = new L.RegularPolygonMarker(new L.LatLng(34.0536781, -118.2427025), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_36._latlng = polygon_36._centerLatLng
+polygon_36.bindPopup("anthony samaniego (Los Angeles)");
+map.addLayer(polygon_36)
+
+var polygon_37 = new L.RegularPolygonMarker(new L.LatLng(64.6863136, 97.7453061), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_37._latlng = polygon_37._centerLatLng
+polygon_37.bindPopup("Anton Novoselov (Russia)");
+map.addLayer(polygon_37)
+
+var polygon_38 = new L.RegularPolygonMarker(new L.LatLng(48.9467562, 11.4038717), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_38._latlng = polygon_38._centerLatLng
+polygon_38.bindPopup("Anton Th. M. (Bavaria)");
+map.addLayer(polygon_38)
+
+var polygon_39 = new L.RegularPolygonMarker(new L.LatLng(34.0709576, -84.2747329), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_39._latlng = polygon_39._centerLatLng
+polygon_39.bindPopup("aperturef1 (Alpharetta, USA)");
+map.addLayer(polygon_39)
+
+var polygon_40 = new L.RegularPolygonMarker(new L.LatLng(43.2562562, -81.1402701), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_40._latlng = polygon_40._centerLatLng
+polygon_40.bindPopup("appareil (St. Marys, Canada)");
+map.addLayer(polygon_40)
+
+var polygon_41 = new L.RegularPolygonMarker(new L.LatLng(-37.9516108, -57.7772299817), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_41._latlng = polygon_41._centerLatLng
+polygon_41.bindPopup("ARRECHEA FOTOGRAFIA (Sierra de los Padres, Argentina)");
+map.addLayer(polygon_41)
+
+var polygon_42 = new L.RegularPolygonMarker(new L.LatLng(56.3241427, 43.9902091), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_42._latlng = polygon_42._centerLatLng
+polygon_42.bindPopup("Artemy Chanaev (Nizhny Novgorod, Russian Federation)");
+map.addLayer(polygon_42)
+
+var polygon_43 = new L.RegularPolygonMarker(new L.LatLng(50.6407351, 4.66696), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_43._latlng = polygon_43._centerLatLng
+polygon_43.bindPopup("Batistini Gaston (Belgium)");
+map.addLayer(polygon_43)
+
+var polygon_44 = new L.RegularPolygonMarker(new L.LatLng(45.5224507, -73.5912827), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_44._latlng = polygon_44._centerLatLng
+polygon_44.bindPopup("bbferrand (unknown)");
+map.addLayer(polygon_44)
+
+var polygon_45 = new L.RegularPolygonMarker(new L.LatLng(25.0375167, 121.5637), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_45._latlng = polygon_45._centerLatLng
+polygon_45.bindPopup("BERT DESIGN (TAIPEI, TAIWAN)");
+map.addLayer(polygon_45)
+
+var polygon_46 = new L.RegularPolygonMarker(new L.LatLng(60.1713198, 24.9414566), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_46._latlng = polygon_46._centerLatLng
+polygon_46.bindPopup("BigWhitePelican (Helsinki, Finland)");
+map.addLayer(polygon_46)
+
+var polygon_47 = new L.RegularPolygonMarker(new L.LatLng(52.5170365, 13.3888599), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_47._latlng = polygon_47._centerLatLng
+polygon_47.bindPopup("blaueaster (Berlin, Germany)");
+map.addLayer(polygon_47)
+
+var polygon_48 = new L.RegularPolygonMarker(new L.LatLng(35.5309166, 139.7029204), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_48._latlng = polygon_48._centerLatLng
+polygon_48.bindPopup("Blauer_Himmel (Kawasaki,Kanagawa, Japan)");
+map.addLayer(polygon_48)
+
+var polygon_49 = new L.RegularPolygonMarker(new L.LatLng(51.5072759, -0.1276597), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_49._latlng = polygon_49._centerLatLng
+polygon_49.bindPopup("blueclaret (London)");
+map.addLayer(polygon_49)
+
+var polygon_50 = new L.RegularPolygonMarker(new L.LatLng(51.5072759, -0.1276597), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_50._latlng = polygon_50._centerLatLng
+polygon_50.bindPopup("bluerockpile (London, United Kingdom)");
+map.addLayer(polygon_50)
+
+var polygon_51 = new L.RegularPolygonMarker(new L.LatLng(47.4983815, 19.0404707), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_51._latlng = polygon_51._centerLatLng
+polygon_51.bindPopup("unknown (Budapest, Hungary)");
+map.addLayer(polygon_51)
+
+var polygon_52 = new L.RegularPolygonMarker(new L.LatLng(40.6501038, -73.9495823), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_52._latlng = polygon_52._centerLatLng
+polygon_52.bindPopup("brdwrd (Brooklyn, NY)");
+map.addLayer(polygon_52)
+
+var polygon_53 = new L.RegularPolygonMarker(new L.LatLng(39.6237094, -77.4108201), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_53._latlng = polygon_53._centerLatLng
+polygon_53.bindPopup("Brian Isemann (Thurmont, MD)");
+map.addLayer(polygon_53)
+
+var polygon_54 = new L.RegularPolygonMarker(new L.LatLng(63.2467777, 25.9209164), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_54._latlng = polygon_54._centerLatLng
+polygon_54.bindPopup("brightdawns (Finland)");
+map.addLayer(polygon_54)
+
+var polygon_55 = new L.RegularPolygonMarker(new L.LatLng(53.3494299, -6.2600969), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_55._latlng = polygon_55._centerLatLng
+polygon_55.bindPopup("brissychic (Dublin, Ireland)");
+map.addLayer(polygon_55)
+
+var polygon_56 = new L.RegularPolygonMarker(new L.LatLng(46.603354, 1.8883335), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_56._latlng = polygon_56._centerLatLng
+polygon_56.bindPopup("unknown (france)");
+map.addLayer(polygon_56)
+
+var polygon_57 = new L.RegularPolygonMarker(new L.LatLng(39.7391536, -104.9847034), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_57._latlng = polygon_57._centerLatLng
+polygon_57.bindPopup("call me ishmael.... (Denver)");
+map.addLayer(polygon_57)
+
+var polygon_58 = new L.RegularPolygonMarker(new L.LatLng(51.0530588, -114.0625614), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_58._latlng = polygon_58._centerLatLng
+polygon_58.bindPopup("Calvin Sun (Calgary, Canada)");
+map.addLayer(polygon_58)
+
+var polygon_59 = new L.RegularPolygonMarker(new L.LatLng(52.2319237, 21.0067265), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_59._latlng = polygon_59._centerLatLng
+polygon_59.bindPopup("cassandraa_ (Warsaw, Poland)");
+map.addLayer(polygon_59)
+
+var polygon_60 = new L.RegularPolygonMarker(new L.LatLng(55.296635, 21.3761052), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_60._latlng = polygon_60._centerLatLng
+polygon_60.bindPopup("change your name (rus)");
+map.addLayer(polygon_60)
+
+var polygon_61 = new L.RegularPolygonMarker(new L.LatLng(-33.4379935, -70.6503976), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_61._latlng = polygon_61._centerLatLng
+polygon_61.bindPopup("Checholina (Santiago, Chile)");
+map.addLayer(polygon_61)
+
+var polygon_62 = new L.RegularPolygonMarker(new L.LatLng(43.3533424, -5.87951433953), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_62._latlng = polygon_62._centerLatLng
+polygon_62.bindPopup("Chin Chinau (Oviedo, Asturias (Spain))");
+map.addLayer(polygon_62)
+
+var polygon_63 = new L.RegularPolygonMarker(new L.LatLng(51.0834196, 10.4234469), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_63._latlng = polygon_63._centerLatLng
+polygon_63.bindPopup("christian.plochacki (Deutschland)");
+map.addLayer(polygon_63)
+
+var polygon_64 = new L.RegularPolygonMarker(new L.LatLng(-35.2820709, 149.1286673), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_64._latlng = polygon_64._centerLatLng
+polygon_64.bindPopup("Cincono- (Canberra, Australia)");
+map.addLayer(polygon_64)
+
+var polygon_65 = new L.RegularPolygonMarker(new L.LatLng(52.5170365, 13.3888599), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_65._latlng = polygon_65._centerLatLng
+polygon_65.bindPopup("ck-berlin (Berlin, Deutschland)");
+map.addLayer(polygon_65)
+
+var polygon_66 = new L.RegularPolygonMarker(new L.LatLng(51.6189557, -3.9499339), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_66._latlng = polygon_66._centerLatLng
+polygon_66.bindPopup("unknown (Sin City)");
+map.addLayer(polygon_66)
+
+var polygon_67 = new L.RegularPolygonMarker(new L.LatLng(40.6501038, -73.9495823), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_67._latlng = polygon_67._centerLatLng
+polygon_67.bindPopup("Clay Kippen (Brooklyn, New York)");
+map.addLayer(polygon_67)
+
+var polygon_68 = new L.RegularPolygonMarker(new L.LatLng(25.47318465, 102.917932156), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_68._latlng = polygon_68._centerLatLng
+polygon_68.bindPopup("cocytus69 (kunming, China)");
+map.addLayer(polygon_68)
+
+var polygon_69 = new L.RegularPolygonMarker(new L.LatLng(56.1496278, 10.2134046), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_69._latlng = polygon_69._centerLatLng
+polygon_69.bindPopup("constantgardener (Aarhus, Denmark)");
+map.addLayer(polygon_69)
+
+var polygon_70 = new L.RegularPolygonMarker(new L.LatLng(37.3855745, -122.08205), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_70._latlng = polygon_70._centerLatLng
+polygon_70.bindPopup("creativejuice (Mountain View, USA)");
+map.addLayer(polygon_70)
+
+var polygon_71 = new L.RegularPolygonMarker(new L.LatLng(50.1213173, -5.5329266), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_71._latlng = polygon_71._centerLatLng
+polygon_71.bindPopup("D I C K S D A I L Y (Penzance, UK)");
+map.addLayer(polygon_71)
+
+var polygon_72 = new L.RegularPolygonMarker(new L.LatLng(36.7014631, -118.7559974), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_72._latlng = polygon_72._centerLatLng
+polygon_72.bindPopup("d. . . (California)");
+map.addLayer(polygon_72)
+
+var polygon_73 = new L.RegularPolygonMarker(new L.LatLng(43.6529206, -79.3849008), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_73._latlng = polygon_73._centerLatLng
+polygon_73.bindPopup("Dan Cronin^ (Toronto, Canada)");
+map.addLayer(polygon_73)
+
+var polygon_74 = new L.RegularPolygonMarker(new L.LatLng(57.7072326, 11.9670171), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_74._latlng = polygon_74._centerLatLng
+polygon_74.bindPopup("Dan Wiklund (unknown)");
+map.addLayer(polygon_74)
+
+var polygon_75 = new L.RegularPolygonMarker(new L.LatLng(56.7861112, -4.1140518), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_75._latlng = polygon_75._centerLatLng
+polygon_75.bindPopup("Dan_Sim (Scotland, United Kingdom)");
+map.addLayer(polygon_75)
+
+var polygon_76 = new L.RegularPolygonMarker(new L.LatLng(51.4556994, -2.5952658), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_76._latlng = polygon_76._centerLatLng
+polygon_76.bindPopup("Danie3 (Bristol, United Kingdom)");
+map.addLayer(polygon_76)
+
+var polygon_77 = new L.RegularPolygonMarker(new L.LatLng(53.5503414, 10.000654), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_77._latlng = polygon_77._centerLatLng
+polygon_77.bindPopup("Daniel Coulmann (Hamburg, Deutschland)");
+map.addLayer(polygon_77)
+
+var polygon_78 = new L.RegularPolygonMarker(new L.LatLng(50.1213881, 8.66200963696), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_78._latlng = polygon_78._centerLatLng
+polygon_78.bindPopup("Daniel Petzold >> www.danielpetzold.de (Frankfurt am Main, Deutschland)");
+map.addLayer(polygon_78)
+
+var polygon_79 = new L.RegularPolygonMarker(new L.LatLng(52.2319237, 21.0067265), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_79._latlng = polygon_79._centerLatLng
+polygon_79.bindPopup("Dariusz.Majgier.pl (Warsaw, Poland)");
+map.addLayer(polygon_79)
+
+var polygon_80 = new L.RegularPolygonMarker(new L.LatLng(42.6511674, -73.754968), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_80._latlng = polygon_80._centerLatLng
+polygon_80.bindPopup("David Cemin (Albany)");
+map.addLayer(polygon_80)
+
+var polygon_81 = new L.RegularPolygonMarker(new L.LatLng(45.5224507, -73.5912827), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_81._latlng = polygon_81._centerLatLng
+polygon_81.bindPopup("David Giral | davidgiralphoto.com (Montreal, Canada)");
+map.addLayer(polygon_81)
+
+var polygon_82 = new L.RegularPolygonMarker(new L.LatLng(51.0834196, 10.4234469), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_82._latlng = polygon_82._centerLatLng
+polygon_82.bindPopup("David Kracht (Germany)");
+map.addLayer(polygon_82)
+
+var polygon_83 = new L.RegularPolygonMarker(new L.LatLng(37.7789601, -122.419199), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_83._latlng = polygon_83._centerLatLng
+polygon_83.bindPopup("Dead Slow (San Francisco, US)");
+map.addLayer(polygon_83)
+
+var polygon_84 = new L.RegularPolygonMarker(new L.LatLng(40.7297817, -81.1053764), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_84._latlng = polygon_84._centerLatLng
+polygon_84.bindPopup("deader than yesterday (Minerva)");
+map.addLayer(polygon_84)
+
+var polygon_85 = new L.RegularPolygonMarker(new L.LatLng(38.9786401, -76.492786), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_85._latlng = polygon_85._centerLatLng
+polygon_85.bindPopup("dean.janiak (Annapolis, MD)");
+map.addLayer(polygon_85)
+
+var polygon_86 = new L.RegularPolygonMarker(new L.LatLng(49.2608944, -123.1139383), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_86._latlng = polygon_86._centerLatLng
+polygon_86.bindPopup("Derek K. Miller (Vancouver, Canada)");
+map.addLayer(polygon_86)
+
+var polygon_87 = new L.RegularPolygonMarker(new L.LatLng(51.0834196, 10.4234469), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_87._latlng = polygon_87._centerLatLng
+polygon_87.bindPopup("derScheuch (Germany)");
+map.addLayer(polygon_87)
+
+var polygon_88 = new L.RegularPolygonMarker(new L.LatLng(48.2083537, 16.3725042), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_88._latlng = polygon_88._centerLatLng
+polygon_88.bindPopup("desomnis (Vienna, Austria)");
+map.addLayer(polygon_88)
+
+var polygon_89 = new L.RegularPolygonMarker(new L.LatLng(52.5229685, 13.3785859), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_89._latlng = polygon_89._centerLatLng
+polygon_89.bindPopup("deta k (Berlin, Deutschland/Germany)");
+map.addLayer(polygon_89)
+
+var polygon_90 = new L.RegularPolygonMarker(new L.LatLng(52.5170365, 13.3888599), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_90._latlng = polygon_90._centerLatLng
+polygon_90.bindPopup("Dietrich Bojko Photographie (Berlin, Germany)");
+map.addLayer(polygon_90)
+
+var polygon_91 = new L.RegularPolygonMarker(new L.LatLng(49.2608944, -123.1139383), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_91._latlng = polygon_91._centerLatLng
+polygon_91.bindPopup("digitAL animAL (Vancouver, Canada)");
+map.addLayer(polygon_91)
+
+var polygon_92 = new L.RegularPolygonMarker(new L.LatLng(40.7305991, -73.9865812), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_92._latlng = polygon_92._centerLatLng
+polygon_92.bindPopup("Dj Poe (NYC, USA)");
+map.addLayer(polygon_92)
+
+var polygon_93 = new L.RegularPolygonMarker(new L.LatLng(53.7589938, -2.7051618), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_93._latlng = polygon_93._centerLatLng
+polygon_93.bindPopup("Doctor Syntax (Preston, Lancashire, U.K.)");
+map.addLayer(polygon_93)
+
+var polygon_94 = new L.RegularPolygonMarker(new L.LatLng(38.8764686, -6.9733664), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_94._latlng = polygon_94._centerLatLng
+polygon_94.bindPopup("Dr. Azzacov (unknown)");
+map.addLayer(polygon_94)
+
+var polygon_95 = new L.RegularPolygonMarker(new L.LatLng(52.7954791, -0.540240236617), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_95._latlng = polygon_95._centerLatLng
+polygon_95.bindPopup("DRB Photography.co.uk (England)");
+map.addLayer(polygon_95)
+
+var polygon_96 = new L.RegularPolygonMarker(new L.LatLng(57.6263877, 39.8933705), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_96._latlng = polygon_96._centerLatLng
+polygon_96.bindPopup("dSavin (Yaroslavl, Russian Federation)");
+map.addLayer(polygon_96)
+
+var polygon_97 = new L.RegularPolygonMarker(new L.LatLng(35.7804015, -78.6390779), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_97._latlng = polygon_97._centerLatLng
+polygon_97.bindPopup("unknown (Raleigh, United States)");
+map.addLayer(polygon_97)
+
+var polygon_98 = new L.RegularPolygonMarker(new L.LatLng(55.9483399, -3.1932723), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_98._latlng = polygon_98._centerLatLng
+polygon_98.bindPopup("duncanreddish (Edinburgh, UK)");
+map.addLayer(polygon_98)
+
+var polygon_99 = new L.RegularPolygonMarker(new L.LatLng(63.4305658, 10.3951929), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_99._latlng = polygon_99._centerLatLng
+polygon_99.bindPopup("e.kristina (Trondheim, Norway)");
+map.addLayer(polygon_99)
+
+var polygon_100 = new L.RegularPolygonMarker(new L.LatLng(40.6501038, -73.9495823), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_100._latlng = polygon_100._centerLatLng
+polygon_100.bindPopup("Edzone (Brooklyn, NYC, USA)");
+map.addLayer(polygon_100)
+
+var polygon_101 = new L.RegularPolygonMarker(new L.LatLng(54.7023545, -3.2765753), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_101._latlng = polygon_101._centerLatLng
+polygon_101.bindPopup("Elamcelt (UK)");
+map.addLayer(polygon_101)
+
+var polygon_102 = new L.RegularPolygonMarker(new L.LatLng(47.6038321, -122.3300624), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_102._latlng = polygon_102._centerLatLng
+polygon_102.bindPopup("elias.and.theresa.carlson (Seattle, USA)");
+map.addLayer(polygon_102)
+
+var polygon_103 = new L.RegularPolygonMarker(new L.LatLng(40.7305991, -73.9865812), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_103._latlng = polygon_103._centerLatLng
+polygon_103.bindPopup("elkogan (NYC)");
+map.addLayer(polygon_103)
+
+var polygon_104 = new L.RegularPolygonMarker(new L.LatLng(43.3533424, -5.87951433953), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_104._latlng = polygon_104._centerLatLng
+polygon_104.bindPopup("elosoenpersona (Oviedo, Spain)");
+map.addLayer(polygon_104)
+
+var polygon_105 = new L.RegularPolygonMarker(new L.LatLng(50.7702648, 15.0583947), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_105._latlng = polygon_105._centerLatLng
+polygon_105.bindPopup("ELP - Erik Lehmden Photography (Liberec, CZECH REPUBLIC)");
+map.addLayer(polygon_105)
+
+var polygon_106 = new L.RegularPolygonMarker(new L.LatLng(54.34181575, 10.1444038955), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_106._latlng = polygon_106._centerLatLng
+polygon_106.bindPopup("elsamuko (Kiel, Germany)");
+map.addLayer(polygon_106)
+
+var polygon_107 = new L.RegularPolygonMarker(new L.LatLng(-27.4689682, 153.0234991), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_107._latlng = polygon_107._centerLatLng
+polygon_107.bindPopup("Emily Benjamin (Brisbane, Queensland, Australia)");
+map.addLayer(polygon_107)
+
+var polygon_108 = new L.RegularPolygonMarker(new L.LatLng(51.7521553, -1.2582135), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_108._latlng = polygon_108._centerLatLng
+polygon_108.bindPopup("Environmental Artist (Oxford, United Kingdom)");
+map.addLayer(polygon_108)
+
+var polygon_109 = new L.RegularPolygonMarker(new L.LatLng(41.3870186, 2.1700437), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_109._latlng = polygon_109._centerLatLng
+polygon_109.bindPopup("ernest figueras (Barcelona)");
+map.addLayer(polygon_109)
+
+var polygon_110 = new L.RegularPolygonMarker(new L.LatLng(48.6822463, 2.16309935178), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_110._latlng = polygon_110._centerLatLng
+polygon_110.bindPopup("erwan 2949 (Anjou, France)");
+map.addLayer(polygon_110)
+
+var polygon_111 = new L.RegularPolygonMarker(new L.LatLng(52.5170365, 13.3888599), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_111._latlng = polygon_111._centerLatLng
+polygon_111.bindPopup("eschwagerus (Berlin, Germany)");
+map.addLayer(polygon_111)
+
+var polygon_112 = new L.RegularPolygonMarker(new L.LatLng(49.8833343, -97.1666741), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_112._latlng = polygon_112._centerLatLng
+polygon_112.bindPopup("FeatheredTar (Winnipeg, Canada)");
+map.addLayer(polygon_112)
+
+var polygon_113 = new L.RegularPolygonMarker(new L.LatLng(52.5170365, 13.3888599), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_113._latlng = polygon_113._centerLatLng
+polygon_113.bindPopup("FH | Photography (Berlin, Germany)");
+map.addLayer(polygon_113)
+
+var polygon_114 = new L.RegularPolygonMarker(new L.LatLng(47.3685586, 8.5404434), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_114._latlng = polygon_114._centerLatLng
+polygon_114.bindPopup("flava2000 (unknown)");
+map.addLayer(polygon_114)
+
+var polygon_115 = new L.RegularPolygonMarker(new L.LatLng(60.3953913, 25.6604862), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_115._latlng = polygon_115._centerLatLng
+polygon_115.bindPopup("Flexu (Porvoo, Finland)");
+map.addLayer(polygon_115)
+
+var polygon_116 = new L.RegularPolygonMarker(new L.LatLng(49.4895914, 8.4672361), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_116._latlng = polygon_116._centerLatLng
+polygon_116.bindPopup("florianpainke (Mannheim, Germany)");
+map.addLayer(polygon_116)
+
+var polygon_117 = new L.RegularPolygonMarker(new L.LatLng(52.0977181, 19.0258159), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_117._latlng = polygon_117._centerLatLng
+polygon_117.bindPopup("Frame_finder (Poland)");
+map.addLayer(polygon_117)
+
+var polygon_118 = new L.RegularPolygonMarker(new L.LatLng(50.9357373, 4.3643727), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_118._latlng = polygon_118._centerLatLng
+polygon_118.bindPopup("Frank Smout (Grimbergen, Belgium)");
+map.addLayer(polygon_118)
+
+var polygon_119 = new L.RegularPolygonMarker(new L.LatLng(30.4507462, -91.154551), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_119._latlng = polygon_119._centerLatLng
+polygon_119.bindPopup("frank3.0 (Baton Rouge, LA, USA)");
+map.addLayer(polygon_119)
+
+var polygon_120 = new L.RegularPolygonMarker(new L.LatLng(51.9890388, 5.0937195), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_120._latlng = polygon_120._centerLatLng
+polygon_120.bindPopup("frans63 (Vianen, Nederland)");
+map.addLayer(polygon_120)
+
+var polygon_121 = new L.RegularPolygonMarker(new L.LatLng(64.145981, -21.9422367), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_121._latlng = polygon_121._centerLatLng
+polygon_121.bindPopup("frisk_gallery (unknown)");
+map.addLayer(polygon_121)
+
+var polygon_122 = new L.RegularPolygonMarker(new L.LatLng(32.7579739, -97.0669292), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_122._latlng = polygon_122._centerLatLng
+polygon_122.bindPopup("friskypics (Gotham City, USA)");
+map.addLayer(polygon_122)
+
+var polygon_123 = new L.RegularPolygonMarker(new L.LatLng(51.5072759, -0.1276597), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_123._latlng = polygon_123._centerLatLng
+polygon_123.bindPopup("futureancient (London, UK)");
+map.addLayer(polygon_123)
+
+var polygon_124 = new L.RegularPolygonMarker(new L.LatLng(42.6384261, 12.674297), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_124._latlng = polygon_124._centerLatLng
+polygon_124.bindPopup("galadh_007 (Italia)");
+map.addLayer(polygon_124)
+
+var polygon_125 = new L.RegularPolygonMarker(new L.LatLng(47.4983815, 19.0404707), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_125._latlng = polygon_125._centerLatLng
+polygon_125.bindPopup("gallmese (Budapest, Hungary)");
+map.addLayer(polygon_125)
+
+var polygon_126 = new L.RegularPolygonMarker(new L.LatLng(43.4516552, -80.4924615), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_126._latlng = polygon_126._centerLatLng
+polygon_126.bindPopup("Gary Simmons (Kitchener, Canada)");
+map.addLayer(polygon_126)
+
+var polygon_127 = new L.RegularPolygonMarker(new L.LatLng(52.0959423, 5.1104136), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_127._latlng = polygon_127._centerLatLng
+polygon_127.bindPopup("Gekko82 (Utrecht, The Netherlands)");
+map.addLayer(polygon_127)
+
+var polygon_128 = new L.RegularPolygonMarker(new L.LatLng(45.49697, 9.026143), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_128._latlng = polygon_128._centerLatLng
+polygon_128.bindPopup("Gianmaria Veronese (Cornaredo, Milano, Italia)");
+map.addLayer(polygon_128)
+
+var polygon_129 = new L.RegularPolygonMarker(new L.LatLng(41.3870186, 2.1700437), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_129._latlng = polygon_129._centerLatLng
+polygon_129.bindPopup("Greg Gladman (Barcelona, Spain)");
+map.addLayer(polygon_129)
+
+var polygon_130 = new L.RegularPolygonMarker(new L.LatLng(50.084819, 14.4177247), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_130._latlng = polygon_130._centerLatLng
+polygon_130.bindPopup("Gregor  Samsa (Prague, Czech Republic)");
+map.addLayer(polygon_130)
+
+var polygon_131 = new L.RegularPolygonMarker(new L.LatLng(40.7305991, -73.9865812), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_131._latlng = polygon_131._centerLatLng
+polygon_131.bindPopup("Guillermo Murcia (New York )");
+map.addLayer(polygon_131)
+
+var polygon_132 = new L.RegularPolygonMarker(new L.LatLng(59.3251172, 18.0710935), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_132._latlng = polygon_132._centerLatLng
+polygon_132.bindPopup("Hannes R (Stockholm, Sweden)");
+map.addLayer(polygon_132)
+
+var polygon_133 = new L.RegularPolygonMarker(new L.LatLng(50.4480951, -104.6158181), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_133._latlng = polygon_133._centerLatLng
+polygon_133.bindPopup("Harry2010 (Regina, Saskatchewan, Canada)");
+map.addLayer(polygon_133)
+
+var polygon_134 = new L.RegularPolygonMarker(new L.LatLng(52.2161396, 6.89846610736), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_134._latlng = polygon_134._centerLatLng
+polygon_134.bindPopup("Hauke Sandhaus (Enschede, Netherlands)");
+map.addLayer(polygon_134)
+
+var polygon_135 = new L.RegularPolygonMarker(new L.LatLng(47.6038321, -122.3300624), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_135._latlng = polygon_135._centerLatLng
+polygon_135.bindPopup("heanster (Seattle, USA)");
+map.addLayer(polygon_135)
+
+var polygon_136 = new L.RegularPolygonMarker(new L.LatLng(52.5170365, 13.3888599), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_136._latlng = polygon_136._centerLatLng
+polygon_136.bindPopup("Heartbeatbox (Berlin)");
+map.addLayer(polygon_136)
+
+var polygon_137 = new L.RegularPolygonMarker(new L.LatLng(63.4305658, 10.3951929), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_137._latlng = polygon_137._centerLatLng
+polygon_137.bindPopup("Helena Normark (Trondheim, Norway)");
+map.addLayer(polygon_137)
+
+var polygon_138 = new L.RegularPolygonMarker(new L.LatLng(51.4825041, 11.9705452), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_138._latlng = polygon_138._centerLatLng
+polygon_138.bindPopup("HerrBohn (Halle (Saale))");
+map.addLayer(polygon_138)
+
+var polygon_139 = new L.RegularPolygonMarker(new L.LatLng(61.0666922, -107.9917071), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_139._latlng = polygon_139._centerLatLng
+polygon_139.bindPopup("hi, im pez (canada)");
+map.addLayer(polygon_139)
+
+var polygon_140 = new L.RegularPolygonMarker(new L.LatLng(34.6852955, 135.5145684), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_140._latlng = polygon_140._centerLatLng
+polygon_140.bindPopup("hyossie (Osaka, Japan)");
+map.addLayer(polygon_140)
+
+var polygon_141 = new L.RegularPolygonMarker(new L.LatLng(52.2928116, -3.73893), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_141._latlng = polygon_141._centerLatLng
+polygon_141.bindPopup("i.m.j. (Wales)");
+map.addLayer(polygon_141)
+
+var polygon_142 = new L.RegularPolygonMarker(new L.LatLng(51.2116824, -102.4597301), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_142._latlng = polygon_142._centerLatLng
+polygon_142.bindPopup("IanDMcGregor (Yorkton, Canada)");
+map.addLayer(polygon_142)
+
+var polygon_143 = new L.RegularPolygonMarker(new L.LatLng(47.1817585, 19.5060937), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_143._latlng = polygon_143._centerLatLng
+polygon_143.bindPopup("icemanphotos (Hungary)");
+map.addLayer(polygon_143)
+
+var polygon_144 = new L.RegularPolygonMarker(new L.LatLng(56.7861112, -4.1140518), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_144._latlng = polygon_144._centerLatLng
+polygon_144.bindPopup("idmcl (Scotland)");
+map.addLayer(polygon_144)
+
+var polygon_145 = new L.RegularPolygonMarker(new L.LatLng(51.0530588, -114.0625614), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_145._latlng = polygon_145._centerLatLng
+polygon_145.bindPopup("iHeartDimSum (Calgary, Canada)");
+map.addLayer(polygon_145)
+
+var polygon_146 = new L.RegularPolygonMarker(new L.LatLng(-34.9059039, -56.1913569), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_146._latlng = polygon_146._centerLatLng
+polygon_146.bindPopup("iign (Montevideo, Uruguay)");
+map.addLayer(polygon_146)
+
+var polygon_147 = new L.RegularPolygonMarker(new L.LatLng(59.6749712, 14.5208584), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_147._latlng = polygon_147._centerLatLng
+polygon_147.bindPopup("imaginize.net (Sweden)");
+map.addLayer(polygon_147)
+
+var polygon_148 = new L.RegularPolygonMarker(new L.LatLng(45.5224507, -73.5912827), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_148._latlng = polygon_148._centerLatLng
+polygon_148.bindPopup("IrenaS (Montreal, Canada)");
+map.addLayer(polygon_148)
+
+var polygon_149 = new L.RegularPolygonMarker(new L.LatLng(52.5170365, 13.3888599), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_149._latlng = polygon_149._centerLatLng
+polygon_149.bindPopup("IsarSteve (Berlin, Germany)");
+map.addLayer(polygon_149)
+
+var polygon_150 = new L.RegularPolygonMarker(new L.LatLng(40.6501038, -73.9495823), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_150._latlng = polygon_150._centerLatLng
+polygon_150.bindPopup("ismaelf (Brooklyn, USA)");
+map.addLayer(polygon_150)
+
+var polygon_151 = new L.RegularPolygonMarker(new L.LatLng(53.9590555, -1.0815361), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_151._latlng = polygon_151._centerLatLng
+polygon_151.bindPopup("itspaulkelly (York, United Kingdom)");
+map.addLayer(polygon_151)
+
+var polygon_152 = new L.RegularPolygonMarker(new L.LatLng(51.5072759, -0.1276597), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_152._latlng = polygon_152._centerLatLng
+polygon_152.bindPopup("jakem (London, UK)");
+map.addLayer(polygon_152)
+
+var polygon_153 = new L.RegularPolygonMarker(new L.LatLng(22.2793278, 114.1628131), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_153._latlng = polygon_153._centerLatLng
+polygon_153.bindPopup("James Yeung (Hong Kong, China)");
+map.addLayer(polygon_153)
+
+var polygon_154 = new L.RegularPolygonMarker(new L.LatLng(-31.9527121, 115.8604796), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_154._latlng = polygon_154._centerLatLng
+polygon_154.bindPopup("Jamie Frith (Perth, Australia)");
+map.addLayer(polygon_154)
+
+var polygon_155 = new L.RegularPolygonMarker(new L.LatLng(61.1714623, 28.7708613), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_155._latlng = polygon_155._centerLatLng
+polygon_155.bindPopup("Jani Kautto (Imatra, Finland)");
+map.addLayer(polygon_155)
+
+var polygon_156 = new L.RegularPolygonMarker(new L.LatLng(53.5437641, 10.0099133), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_156._latlng = polygon_156._centerLatLng
+polygon_156.bindPopup("Jarek Putz (Hamburg, Germany)");
+map.addLayer(polygon_156)
+
+var polygon_157 = new L.RegularPolygonMarker(new L.LatLng(46.603354, 1.8883335), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_157._latlng = polygon_157._centerLatLng
+polygon_157.bindPopup("jarguel (France)");
+map.addLayer(polygon_157)
+
+var polygon_158 = new L.RegularPolygonMarker(new L.LatLng(61.0666922, -107.9917071), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_158._latlng = polygon_158._centerLatLng
+polygon_158.bindPopup("Jason Drury (Canada)");
+map.addLayer(polygon_158)
+
+var polygon_159 = new L.RegularPolygonMarker(new L.LatLng(-32.9157298, -60.8419492), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_159._latlng = polygon_159._centerLatLng
+polygon_159.bindPopup("unknown (Zona Rural, Argentina)");
+map.addLayer(polygon_159)
+
+var polygon_160 = new L.RegularPolygonMarker(new L.LatLng(48.1372719, 11.5754815), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_160._latlng = polygon_160._centerLatLng
+polygon_160.bindPopup("javiernoval (unknown)");
+map.addLayer(polygon_160)
+
+var polygon_161 = new L.RegularPolygonMarker(new L.LatLng(59.25089175, 14.0195399785), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_161._latlng = polygon_161._centerLatLng
+polygon_161.bindPopup("jennydasdesign (Kristinehamn, Sweden)");
+map.addLayer(polygon_161)
+
+var polygon_162 = new L.RegularPolygonMarker(new L.LatLng(39.7837304, -100.4458825), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_162._latlng = polygon_162._centerLatLng
+polygon_162.bindPopup("jkpark78 (USA)");
+map.addLayer(polygon_162)
+
+var polygon_163 = new L.RegularPolygonMarker(new L.LatLng(52.5170365, 13.3888599), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_163._latlng = polygon_163._centerLatLng
+polygon_163.bindPopup("jo:wra (Berlin, Germany)");
+map.addLayer(polygon_163)
+
+var polygon_164 = new L.RegularPolygonMarker(new L.LatLng(54.7023545, -3.2765753), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_164._latlng = polygon_164._centerLatLng
+polygon_164.bindPopup("Joe Dunckley (UK)");
+map.addLayer(polygon_164)
+
+var polygon_165 = new L.RegularPolygonMarker(new L.LatLng(40.7305991, -73.9865812), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_165._latlng = polygon_165._centerLatLng
+polygon_165.bindPopup("joe holmes (New York City, USA)");
+map.addLayer(polygon_165)
+
+var polygon_166 = new L.RegularPolygonMarker(new L.LatLng(52.3710088, 4.9001115), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_166._latlng = polygon_166._centerLatLng
+polygon_166.bindPopup("Joep R. (Amsterdam, Netherlands)");
+map.addLayer(polygon_166)
+
+var polygon_167 = new L.RegularPolygonMarker(new L.LatLng(1.2904527, 103.852038), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_167._latlng = polygon_167._centerLatLng
+polygon_167.bindPopup("Jon Siegel (Singapore, Singapore)");
+map.addLayer(polygon_167)
+
+var polygon_168 = new L.RegularPolygonMarker(new L.LatLng(63.2467777, 25.9209164), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_168._latlng = polygon_168._centerLatLng
+polygon_168.bindPopup("Joni N (Finland)");
+map.addLayer(polygon_168)
+
+var polygon_169 = new L.RegularPolygonMarker(new L.LatLng(37.7789601, -122.419199), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_169._latlng = polygon_169._centerLatLng
+polygon_169.bindPopup("Josh Farria (San Francisco, CA)");
+map.addLayer(polygon_169)
+
+var polygon_170 = new L.RegularPolygonMarker(new L.LatLng(35.69004135, 139.510395073), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_170._latlng = polygon_170._centerLatLng
+polygon_170.bindPopup("jrobertblack (Tokyo, Japan)");
+map.addLayer(polygon_170)
+
+var polygon_171 = new L.RegularPolygonMarker(new L.LatLng(37.7789601, -122.419199), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_171._latlng = polygon_171._centerLatLng
+polygon_171.bindPopup("julianbialowas (San Francisco, CA)");
+map.addLayer(polygon_171)
+
+var polygon_172 = new L.RegularPolygonMarker(new L.LatLng(37.5710824, 126.9953036), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_172._latlng = polygon_172._centerLatLng
+polygon_172.bindPopup("june1777 (Seoul, Korea)");
+map.addLayer(polygon_172)
+
+var polygon_173 = new L.RegularPolygonMarker(new L.LatLng(39.952335, -75.163789), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_173._latlng = polygon_173._centerLatLng
+polygon_173.bindPopup("Justin Wolfe (Philadelphia, United States)");
+map.addLayer(polygon_173)
+
+var polygon_174 = new L.RegularPolygonMarker(new L.LatLng(50.6407351, 4.66696), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_174._latlng = polygon_174._centerLatLng
+polygon_174.bindPopup("kaliak (belgium)");
+map.addLayer(polygon_174)
+
+var polygon_175 = new L.RegularPolygonMarker(new L.LatLng(45.0709201, 7.685972), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_175._latlng = polygon_175._centerLatLng
+polygon_175.bindPopup("kaneda99 (Turin, Italy)");
+map.addLayer(polygon_175)
+
+var polygon_176 = new L.RegularPolygonMarker(new L.LatLng(43.0811118, 0.3839894), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_176._latlng = polygon_176._centerLatLng
+polygon_176.bindPopup("Katia SANCHEZ Photography (La Barthe de Neste, France)");
+map.addLayer(polygon_176)
+
+var polygon_177 = new L.RegularPolygonMarker(new L.LatLng(41.6521342, -0.8809428), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_177._latlng = polygon_177._centerLatLng
+polygon_177.bindPopup("koke (Zaragoza, Spain)");
+map.addLayer(polygon_177)
+
+var polygon_178 = new L.RegularPolygonMarker(new L.LatLng(43.3842987, -80.3098064), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_178._latlng = polygon_178._centerLatLng
+polygon_178.bindPopup("KPEP (Cambridge, Canada)");
+map.addLayer(polygon_178)
+
+var polygon_179 = new L.RegularPolygonMarker(new L.LatLng(52.5170365, 13.3888599), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_179._latlng = polygon_179._centerLatLng
+polygon_179.bindPopup("KrolopFoto (Berlin, Deutschland)");
+map.addLayer(polygon_179)
+
+var polygon_180 = new L.RegularPolygonMarker(new L.LatLng(52.5170365, 13.3888599), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_180._latlng = polygon_180._centerLatLng
+polygon_180.bindPopup("Kuusela photography (Berlin, Germany)");
+map.addLayer(polygon_180)
+
+var polygon_181 = new L.RegularPolygonMarker(new L.LatLng(48.1113589, -1.680009), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_181._latlng = polygon_181._centerLatLng
+polygon_181.bindPopup("Ladnewg (Rennes, France)");
+map.addLayer(polygon_181)
+
+var polygon_182 = new L.RegularPolygonMarker(new L.LatLng(52.5170365, 13.3888599), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_182._latlng = polygon_182._centerLatLng
+polygon_182.bindPopup("lars.simon77 (Berlin, Deutschland)");
+map.addLayer(polygon_182)
+
+var polygon_183 = new L.RegularPolygonMarker(new L.LatLng(-32.0967361, -63.7940923), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_183._latlng = polygon_183._centerLatLng
+polygon_183.bindPopup("unknown (unknown)");
+map.addLayer(polygon_183)
+
+var polygon_184 = new L.RegularPolygonMarker(new L.LatLng(36.5748441, 139.2394179), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_184._latlng = polygon_184._centerLatLng
+polygon_184.bindPopup("lenslet (Japan)");
+map.addLayer(polygon_184)
+
+var polygon_185 = new L.RegularPolygonMarker(new L.LatLng(52.5170365, 13.3888599), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_185._latlng = polygon_185._centerLatLng
+polygon_185.bindPopup("LeRamz (Berlin, Germany)");
+map.addLayer(polygon_185)
+
+var polygon_186 = new L.RegularPolygonMarker(new L.LatLng(53.5574458, 13.2602781), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_186._latlng = polygon_186._centerLatLng
+polygon_186.bindPopup("lichtmaedel (Neubrandenburg, Germany)");
+map.addLayer(polygon_186)
+
+var polygon_187 = new L.RegularPolygonMarker(new L.LatLng(64.145981, -21.9422367), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_187._latlng = polygon_187._centerLatLng
+polygon_187.bindPopup("Lighthouse Keeperess (unknown)");
+map.addLayer(polygon_187)
+
+var polygon_188 = new L.RegularPolygonMarker(new L.LatLng(45.8131545, 15.9770298), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_188._latlng = polygon_188._centerLatLng
+polygon_188.bindPopup("Lightsize (Zagreb, Croatia)");
+map.addLayer(polygon_188)
+
+var polygon_189 = new L.RegularPolygonMarker(new L.LatLng(58.3727059, 26.7237528), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_189._latlng = polygon_189._centerLatLng
+polygon_189.bindPopup("Liis Klammer (Tartu, Estonia)");
+map.addLayer(polygon_189)
+
+var polygon_190 = new L.RegularPolygonMarker(new L.LatLng(58.5909124, 16.1903511), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_190._latlng = polygon_190._centerLatLng
+polygon_190.bindPopup("unknown (unknown)");
+map.addLayer(polygon_190)
+
+var polygon_191 = new L.RegularPolygonMarker(new L.LatLng(37.7884969, -122.3558473), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_191._latlng = polygon_191._centerLatLng
+polygon_191.bindPopup("liz.rusby (Bay Area, USA)");
+map.addLayer(polygon_191)
+
+var polygon_192 = new L.RegularPolygonMarker(new L.LatLng(35.69004135, 139.510395073), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_192._latlng = polygon_192._centerLatLng
+polygon_192.bindPopup("Lomodachi (Tokyo, Japan)");
+map.addLayer(polygon_192)
+
+var polygon_193 = new L.RegularPolygonMarker(new L.LatLng(40.7305991, -73.9865812), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_193._latlng = polygon_193._centerLatLng
+polygon_193.bindPopup("LucasAeon (New York , United States)");
+map.addLayer(polygon_193)
+
+var polygon_194 = new L.RegularPolygonMarker(new L.LatLng(47.3685586, 8.5404434), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_194._latlng = polygon_194._centerLatLng
+polygon_194.bindPopup("lycienjantos (unknown)");
+map.addLayer(polygon_194)
+
+var polygon_195 = new L.RegularPolygonMarker(new L.LatLng(31.5621916, 74.3228517), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_195._latlng = polygon_195._centerLatLng
+polygon_195.bindPopup("M Atif Saeed (Lahore, Pakistan)");
+map.addLayer(polygon_195)
+
+var polygon_196 = new L.RegularPolygonMarker(new L.LatLng(48.2640845, -2.9202408), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_196._latlng = polygon_196._centerLatLng
+polygon_196.bindPopup("m.a.d_photographs (Brittany)");
+map.addLayer(polygon_196)
+
+var polygon_197 = new L.RegularPolygonMarker(new L.LatLng(53.5437641, 10.0099133), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_197._latlng = polygon_197._centerLatLng
+polygon_197.bindPopup("m_paessler (Hamburg, Germany)");
+map.addLayer(polygon_197)
+
+var polygon_198 = new L.RegularPolygonMarker(new L.LatLng(3.13871025, 101.682099541), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_198._latlng = polygon_198._centerLatLng
+polygon_198.bindPopup("mahdieh mirmoezi (Kuala Lumpur, Malaysia)");
+map.addLayer(polygon_198)
+
+var polygon_199 = new L.RegularPolygonMarker(new L.LatLng(40.6403167, 22.9352716), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_199._latlng = polygon_199._centerLatLng
+polygon_199.bindPopup("Manolis Thr (Thessaloniki, Greece)");
+map.addLayer(polygon_199)
+
+var polygon_200 = new L.RegularPolygonMarker(new L.LatLng(52.5170365, 13.3888599), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_200._latlng = polygon_200._centerLatLng
+polygon_200.bindPopup("Manuel Gutjahr (Berlin, Germany)");
+map.addLayer(polygon_200)
+
+var polygon_201 = new L.RegularPolygonMarker(new L.LatLng(52.5170365, 13.3888599), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_201._latlng = polygon_201._centerLatLng
+polygon_201.bindPopup("Manuela Hoffmann (Berlin, Germany)");
+map.addLayer(polygon_201)
+
+var polygon_202 = new L.RegularPolygonMarker(new L.LatLng(50.084819, 14.4177247), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_202._latlng = polygon_202._centerLatLng
+polygon_202.bindPopup("marburi (Prague, The Czech Republic)");
+map.addLayer(polygon_202)
+
+var polygon_203 = new L.RegularPolygonMarker(new L.LatLng(39.7837304, -100.4458825), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_203._latlng = polygon_203._centerLatLng
+polygon_203.bindPopup("mariosworld343 (United States )");
+map.addLayer(polygon_203)
+
+var polygon_204 = new L.RegularPolygonMarker(new L.LatLng(51.5072759, -0.1276597), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_204._latlng = polygon_204._centerLatLng
+polygon_204.bindPopup("mariusz kluzniak (London, UK)");
+map.addLayer(polygon_204)
+
+var polygon_205 = new L.RegularPolygonMarker(new L.LatLng(43.6529206, -79.3849008), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_205._latlng = polygon_205._centerLatLng
+polygon_205.bindPopup("mark justin harvey (Toronto, canada)");
+map.addLayer(polygon_205)
+
+var polygon_206 = new L.RegularPolygonMarker(new L.LatLng(45.5224507, -73.5912827), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_206._latlng = polygon_206._centerLatLng
+polygon_206.bindPopup("Marlandova (unknown)");
+map.addLayer(polygon_206)
+
+var polygon_207 = new L.RegularPolygonMarker(new L.LatLng(49.0105758, 8.4041208), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_207._latlng = polygon_207._centerLatLng
+polygon_207.bindPopup("Martin Gommel (Karlsruhe, Germany)");
+map.addLayer(polygon_207)
+
+var polygon_208 = new L.RegularPolygonMarker(new L.LatLng(63.4305658, 10.3951929), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_208._latlng = polygon_208._centerLatLng
+polygon_208.bindPopup("Martin Ystenes - http://hei.cc (Trondheim, Norway)");
+map.addLayer(polygon_208)
+
+var polygon_209 = new L.RegularPolygonMarker(new L.LatLng(31.5621916, 74.3228517), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_209._latlng = polygon_209._centerLatLng
+polygon_209.bindPopup("Maryam Arif (Lahore, Pakistan)");
+map.addLayer(polygon_209)
+
+var polygon_210 = new L.RegularPolygonMarker(new L.LatLng(36.5748441, 139.2394179), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_210._latlng = polygon_210._centerLatLng
+polygon_210.bindPopup("masahiro miyasaka (Japan)");
+map.addLayer(polygon_210)
+
+var polygon_211 = new L.RegularPolygonMarker(new L.LatLng(52.5170365, 13.3888599), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_211._latlng = polygon_211._centerLatLng
+polygon_211.bindPopup("Mathias* (Berlin, Germany)");
+map.addLayer(polygon_211)
+
+var polygon_212 = new L.RegularPolygonMarker(new L.LatLng(51.2318283, 3.20778222299), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_212._latlng = polygon_212._centerLatLng
+polygon_212.bindPopup("Mathijs Delva (Brugge, Belgium)");
+map.addLayer(polygon_212)
+
+var polygon_213 = new L.RegularPolygonMarker(new L.LatLng(45.180348, 7.516316), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_213._latlng = polygon_213._centerLatLng
+polygon_213.bindPopup("Matiluba (La Cassa (To), Italia)");
+map.addLayer(polygon_213)
+
+var polygon_214 = new L.RegularPolygonMarker(new L.LatLng(42.6384261, 12.674297), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_214._latlng = polygon_214._centerLatLng
+polygon_214.bindPopup("Matteo Leoni (Italia)");
+map.addLayer(polygon_214)
+
+var polygon_215 = new L.RegularPolygonMarker(new L.LatLng(45.4666211, 9.1906166), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_215._latlng = polygon_215._centerLatLng
+polygon_215.bindPopup("Matteo M. (Milano, Italia)");
+map.addLayer(polygon_215)
+
+var polygon_216 = new L.RegularPolygonMarker(new L.LatLng(42.6384261, 12.674297), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_216._latlng = polygon_216._centerLatLng
+polygon_216.bindPopup("Matteo Paciotti | Photography (Italia)");
+map.addLayer(polygon_216)
+
+var polygon_217 = new L.RegularPolygonMarker(new L.LatLng(40.0028028, -4.003104), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_217._latlng = polygon_217._centerLatLng
+polygon_217.bindPopup("Matutino. (unknown)");
+map.addLayer(polygon_217)
+
+var polygon_218 = new L.RegularPolygonMarker(new L.LatLng(52.5170365, 13.3888599), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_218._latlng = polygon_218._centerLatLng
+polygon_218.bindPopup("mckinnon.james (Berlin, Germany)");
+map.addLayer(polygon_218)
+
+var polygon_219 = new L.RegularPolygonMarker(new L.LatLng(50.9778285, 11.0296459), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_219._latlng = polygon_219._centerLatLng
+polygon_219.bindPopup("Meister Schnitter (Erfurt, Germany)");
+map.addLayer(polygon_219)
+
+var polygon_220 = new L.RegularPolygonMarker(new L.LatLng(45.5202471, -122.6741949), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_220._latlng = polygon_220._centerLatLng
+polygon_220.bindPopup("Melissa Toledo (Portland, OR, USA)");
+map.addLayer(polygon_220)
+
+var polygon_221 = new L.RegularPolygonMarker(new L.LatLng(48.7411522, 19.4528646), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_221._latlng = polygon_221._centerLatLng
+polygon_221.bindPopup("Mia Minor (Slovakia)");
+map.addLayer(polygon_221)
+
+var polygon_222 = new L.RegularPolygonMarker(new L.LatLng(49.9739001, 9.1491699), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_222._latlng = polygon_222._centerLatLng
+polygon_222.bindPopup("Michad90 (Aschaffenburg, Germany)");
+map.addLayer(polygon_222)
+
+var polygon_223 = new L.RegularPolygonMarker(new L.LatLng(38.0299967, -107.3153335), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_223._latlng = polygon_223._centerLatLng
+polygon_223.bindPopup("Michael_Underwood (Lake City, Colorado)");
+map.addLayer(polygon_223)
+
+var polygon_224 = new L.RegularPolygonMarker(new L.LatLng(45.5224507, -73.5912827), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_224._latlng = polygon_224._centerLatLng
+polygon_224.bindPopup("Michel Assaad (Montreal, Canada)");
+map.addLayer(polygon_224)
+
+var polygon_225 = new L.RegularPolygonMarker(new L.LatLng(50.416667, -4.75), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_225._latlng = polygon_225._centerLatLng
+polygon_225.bindPopup("midlander1231 (Cornwall., United Kingdom)");
+map.addLayer(polygon_225)
+
+var polygon_226 = new L.RegularPolygonMarker(new L.LatLng(60.1713198, 24.9414566), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_226._latlng = polygon_226._centerLatLng
+polygon_226.bindPopup("Miku Puustineviz (Helsinki, Finland)");
+map.addLayer(polygon_226)
+
+var polygon_227 = new L.RegularPolygonMarker(new L.LatLng(22.5462321, 114.0570068), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_227._latlng = polygon_227._centerLatLng
+polygon_227.bindPopup("millan p. rible (Shenzhen, Peoples Republic Of China)");
+map.addLayer(polygon_227)
+
+var polygon_228 = new L.RegularPolygonMarker(new L.LatLng(59.6749712, 14.5208584), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_228._latlng = polygon_228._centerLatLng
+polygon_228.bindPopup("MKarlsson (Sweden)");
+map.addLayer(polygon_228)
+
+var polygon_229 = new L.RegularPolygonMarker(new L.LatLng(52.5170365, 13.3888599), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_229._latlng = polygon_229._centerLatLng
+polygon_229.bindPopup("mompl (Berlin, Germany)");
+map.addLayer(polygon_229)
+
+var polygon_230 = new L.RegularPolygonMarker(new L.LatLng(36.01852445, 139.281427134), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_230._latlng = polygon_230._centerLatLng
+polygon_230.bindPopup("mosbies (Saitama, Japan)");
+map.addLayer(polygon_230)
+
+var polygon_231 = new L.RegularPolygonMarker(new L.LatLng(52.4081812, -1.510477), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_231._latlng = polygon_231._centerLatLng
+polygon_231.bindPopup("MrLeica.com (MatthewOsbornePhotography) (Coventry, UK)");
+map.addLayer(polygon_231)
+
+var polygon_232 = new L.RegularPolygonMarker(new L.LatLng(59.3251172, 18.0710935), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_232._latlng = polygon_232._centerLatLng
+polygon_232.bindPopup("msvenssons (Stockholm, Sweden)");
+map.addLayer(polygon_232)
+
+var polygon_233 = new L.RegularPolygonMarker(new L.LatLng(35.69004135, 139.510395073), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_233._latlng = polygon_233._centerLatLng
+polygon_233.bindPopup("Nam2@7676 (TOKYO, JAPAN)");
+map.addLayer(polygon_233)
+
+var polygon_234 = new L.RegularPolygonMarker(new L.LatLng(39.0045544, -76.8755282), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_234._latlng = polygon_234._centerLatLng
+polygon_234.bindPopup("NASA Goddard Photo and Video (Greenbelt, MD, USA)");
+map.addLayer(polygon_234)
+
+var polygon_235 = new L.RegularPolygonMarker(new L.LatLng(54.7023545, -3.2765753), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_235._latlng = polygon_235._centerLatLng
+polygon_235.bindPopup("Nick Barkworth (UK)");
+map.addLayer(polygon_235)
+
+var polygon_236 = new L.RegularPolygonMarker(new L.LatLng(41.8756208, -87.6243706), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_236._latlng = polygon_236._centerLatLng
+polygon_236.bindPopup("Nick Campbell (Chicago, United States)");
+map.addLayer(polygon_236)
+
+var polygon_237 = new L.RegularPolygonMarker(new L.LatLng(42.3604823, -71.0595678), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_237._latlng = polygon_237._centerLatLng
+polygon_237.bindPopup("Nick Keating (Boston, USA)");
+map.addLayer(polygon_237)
+
+var polygon_238 = new L.RegularPolygonMarker(new L.LatLng(51.0834196, 10.4234469), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_238._latlng = polygon_238._centerLatLng
+polygon_238.bindPopup("Nickail (Deutschland)");
+map.addLayer(polygon_238)
+
+var polygon_239 = new L.RegularPolygonMarker(new L.LatLng(45.7774551, 3.0819427), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_239._latlng = polygon_239._centerLatLng
+polygon_239.bindPopup("Nico carletta (Clermont-Ferrand, france)");
+map.addLayer(polygon_239)
+
+var polygon_240 = new L.RegularPolygonMarker(new L.LatLng(46.9480572, 7.4513003), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_240._latlng = polygon_240._centerLatLng
+polygon_240.bindPopup("nicolasheinzelmann (Berne, Switzerland)");
+map.addLayer(polygon_240)
+
+var polygon_241 = new L.RegularPolygonMarker(new L.LatLng(40.7305991, -73.9865812), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_241._latlng = polygon_241._centerLatLng
+polygon_241.bindPopup("Noel Estevez (New York City)");
+map.addLayer(polygon_241)
+
+var polygon_242 = new L.RegularPolygonMarker(new L.LatLng(35.69004135, 139.510395073), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_242._latlng = polygon_242._centerLatLng
+polygon_242.bindPopup("noji-ichi (Tokyo, Japan)");
+map.addLayer(polygon_242)
+
+var polygon_243 = new L.RegularPolygonMarker(new L.LatLng(48.2083537, 16.3725042), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_243._latlng = polygon_243._centerLatLng
+polygon_243.bindPopup("Nuuuuuuuuuuul (Vienna, Austria / Europe)");
+map.addLayer(polygon_243)
+
+var polygon_244 = new L.RegularPolygonMarker(new L.LatLng(41.7291194, 1.8283711), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_244._latlng = polygon_244._centerLatLng
+polygon_244.bindPopup("unknown (unknown)");
+map.addLayer(polygon_244)
+
+var polygon_245 = new L.RegularPolygonMarker(new L.LatLng(61.0666922, -107.9917071), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_245._latlng = polygon_245._centerLatLng
+polygon_245.bindPopup("O.Lamalice (Canada)");
+map.addLayer(polygon_245)
+
+var polygon_246 = new L.RegularPolygonMarker(new L.LatLng(52.5170365, 13.3888599), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_246._latlng = polygon_246._centerLatLng
+polygon_246.bindPopup("Ole Begemann (Berlin, Germany)");
+map.addLayer(polygon_246)
+
+var polygon_247 = new L.RegularPolygonMarker(new L.LatLng(52.5170365, 13.3888599), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_247._latlng = polygon_247._centerLatLng
+polygon_247.bindPopup("olivegreen (Berlin, Germany)");
+map.addLayer(polygon_247)
+
+var polygon_248 = new L.RegularPolygonMarker(new L.LatLng(46.603354, 1.8883335), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_248._latlng = polygon_248._centerLatLng
+polygon_248.bindPopup("Olivier Duport (France)");
+map.addLayer(polygon_248)
+
+var polygon_249 = new L.RegularPolygonMarker(new L.LatLng(51.5882332, -2.9974967), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_249._latlng = polygon_249._centerLatLng
+polygon_249.bindPopup("OndaOcho (Newport, UK)");
+map.addLayer(polygon_249)
+
+var polygon_250 = new L.RegularPolygonMarker(new L.LatLng(35.69004135, 139.510395073), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_250._latlng = polygon_250._centerLatLng
+polygon_250.bindPopup("osamukaneko (Tokyo, Japan)");
+map.addLayer(polygon_250)
+
+var polygon_251 = new L.RegularPolygonMarker(new L.LatLng(52.5170365, 13.3888599), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_251._latlng = polygon_251._centerLatLng
+polygon_251.bindPopup("ovit (berlin, germany)");
+map.addLayer(polygon_251)
+
+var polygon_252 = new L.RegularPolygonMarker(new L.LatLng(41.0096334, 28.9651646), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_252._latlng = polygon_252._centerLatLng
+polygon_252.bindPopup("Oyku Oge (istanbul, turkey)");
+map.addLayer(polygon_252)
+
+var polygon_253 = new L.RegularPolygonMarker(new L.LatLng(55.7516147, 37.6187012), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_253._latlng = polygon_253._centerLatLng
+polygon_253.bindPopup("panikyu (Moscow, Russia)");
+map.addLayer(polygon_253)
+
+var polygon_254 = new L.RegularPolygonMarker(new L.LatLng(39.2908608, -76.6108073), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_254._latlng = polygon_254._centerLatLng
+polygon_254.bindPopup("patrickjoust (Baltimore)");
+map.addLayer(polygon_254)
+
+var polygon_255 = new L.RegularPolygonMarker(new L.LatLng(54.7023545, -3.2765753), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_255._latlng = polygon_255._centerLatLng
+polygon_255.bindPopup("Paul Cooklin (UK)");
+map.addLayer(polygon_255)
+
+var polygon_256 = new L.RegularPolygonMarker(new L.LatLng(-34.612869, -58.4459789), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_256._latlng = polygon_256._centerLatLng
+polygon_256.bindPopup("paz.olivaresdroguett (Buenos Aires)");
+map.addLayer(polygon_256)
+
+var polygon_257 = new L.RegularPolygonMarker(new L.LatLng(43.6529206, -79.3849008), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_257._latlng = polygon_257._centerLatLng
+polygon_257.bindPopup("Peter Bowers (Toronto, Canada)");
+map.addLayer(polygon_257)
+
+var polygon_258 = new L.RegularPolygonMarker(new L.LatLng(-17.68749305, -149.445078132), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_258._latlng = polygon_258._centerLatLng
+polygon_258.bindPopup("philippe* (tahiti)");
+map.addLayer(polygon_258)
+
+var polygon_259 = new L.RegularPolygonMarker(new L.LatLng(52.2033051, 0.124862), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_259._latlng = polygon_259._centerLatLng
+polygon_259.bindPopup("PhotoJunket (Cambridge, UK)");
+map.addLayer(polygon_259)
+
+var polygon_260 = new L.RegularPolygonMarker(new L.LatLng(39.2908608, -76.6108073), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_260._latlng = polygon_260._centerLatLng
+polygon_260.bindPopup("photosbychinwe (Baltimore, Maryland, USA)");
+map.addLayer(polygon_260)
+
+var polygon_261 = new L.RegularPolygonMarker(new L.LatLng(48.8419182, 2.4172278), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_261._latlng = polygon_261._centerLatLng
+polygon_261.bindPopup("Pierre Journel (unknown)");
+map.addLayer(polygon_261)
+
+var polygon_262 = new L.RegularPolygonMarker(new L.LatLng(47.2185155, -1.5545147), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_262._latlng = polygon_262._centerLatLng
+polygon_262.bindPopup("pierrebourhis (nantes)");
+map.addLayer(polygon_262)
+
+var polygon_263 = new L.RegularPolygonMarker(new L.LatLng(48.7784931, 9.1800456), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_263._latlng = polygon_263._centerLatLng
+polygon_263.bindPopup("popikone (Stuttgart, Germany)");
+map.addLayer(polygon_263)
+
+var polygon_264 = new L.RegularPolygonMarker(new L.LatLng(43.9024768, 5.2920876), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_264._latlng = polygon_264._centerLatLng
+polygon_264.bindPopup("ptimat (Roussillon, France)");
+map.addLayer(polygon_264)
+
+var polygon_265 = new L.RegularPolygonMarker(new L.LatLng(61.0666922, -107.9917071), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_265._latlng = polygon_265._centerLatLng
+polygon_265.bindPopup("ragingtornado (Canada)");
+map.addLayer(polygon_265)
+
+var polygon_266 = new L.RegularPolygonMarker(new L.LatLng(-37.8142176, 144.9631608), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_266._latlng = polygon_266._centerLatLng
+polygon_266.bindPopup("RagtimeWillie (Melbourne, Australia)");
+map.addLayer(polygon_266)
+
+var polygon_267 = new L.RegularPolygonMarker(new L.LatLng(46.5093268, 6.498317), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_267._latlng = polygon_267._centerLatLng
+polygon_267.bindPopup("unknown (Morges, Switzerland)");
+map.addLayer(polygon_267)
+
+var polygon_268 = new L.RegularPolygonMarker(new L.LatLng(-23.3112878, -51.1595023), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_268._latlng = polygon_268._centerLatLng
+polygon_268.bindPopup("RAWF85 (Londrina, Brazil)");
+map.addLayer(polygon_268)
+
+var polygon_269 = new L.RegularPolygonMarker(new L.LatLng(42.6384261, 12.674297), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_269._latlng = polygon_269._centerLatLng
+polygon_269.bindPopup("reiroshu (italy)");
+map.addLayer(polygon_269)
+
+var polygon_270 = new L.RegularPolygonMarker(new L.LatLng(52.1490059, 17.3468236), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_270._latlng = polygon_270._centerLatLng
+polygon_270.bindPopup("remik78 (Wielkopolska, Poland)");
+map.addLayer(polygon_270)
+
+var polygon_271 = new L.RegularPolygonMarker(new L.LatLng(46.6438656, 21.2747575), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_271._latlng = polygon_271._centerLatLng
+polygon_271.bindPopup("unknown (Gyula, Hungary)");
+map.addLayer(polygon_271)
+
+var polygon_272 = new L.RegularPolygonMarker(new L.LatLng(49.8167003, 15.4749544), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_272._latlng = polygon_272._centerLatLng
+polygon_272.bindPopup("Richard Hodonicky (Czech republic)");
+map.addLayer(polygon_272)
+
+var polygon_273 = new L.RegularPolygonMarker(new L.LatLng(-36.50775635, 174.540946482), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_273._latlng = polygon_273._centerLatLng
+polygon_273.bindPopup("Robert Brienza (Auckland, New Zealand)");
+map.addLayer(polygon_273)
+
+var polygon_274 = new L.RegularPolygonMarker(new L.LatLng(52.2379891, 5.53460738162), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_274._latlng = polygon_274._centerLatLng
+polygon_274.bindPopup("Robert-Paul Jansen | byjansen.com (Nederland)");
+map.addLayer(polygon_274)
+
+var polygon_275 = new L.RegularPolygonMarker(new L.LatLng(41.3870186, 2.1700437), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_275._latlng = polygon_275._centerLatLng
+polygon_275.bindPopup("RoldixBCN (Barcelona)");
+map.addLayer(polygon_275)
+
+var polygon_276 = new L.RegularPolygonMarker(new L.LatLng(53.0758099, 8.80717), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_276._latlng = polygon_276._centerLatLng
+polygon_276.bindPopup("Rona's whereabouts (Bremen, Germany)");
+map.addLayer(polygon_276)
+
+var polygon_277 = new L.RegularPolygonMarker(new L.LatLng(51.0834196, 10.4234469), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_277._latlng = polygon_277._centerLatLng
+polygon_277.bindPopup("rr807 (Germany)");
+map.addLayer(polygon_277)
+
+var polygon_278 = new L.RegularPolygonMarker(new L.LatLng(50.82221, -0.1377534), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_278._latlng = polygon_278._centerLatLng
+polygon_278.bindPopup("S l a w e k (Brighton, UK)");
+map.addLayer(polygon_278)
+
+var polygon_279 = new L.RegularPolygonMarker(new L.LatLng(46.603354, 1.8883335), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_279._latlng = polygon_279._centerLatLng
+polygon_279.bindPopup("Samuel Raison (France)");
+map.addLayer(polygon_279)
+
+var polygon_280 = new L.RegularPolygonMarker(new L.LatLng(40.5834557, -74.1496048), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_280._latlng = polygon_280._centerLatLng
+polygon_280.bindPopup("Sean P. Sweeney (Staten Island New York, USA)");
+map.addLayer(polygon_280)
+
+var polygon_281 = new L.RegularPolygonMarker(new L.LatLng(41.3870186, 2.1700437), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_281._latlng = polygon_281._centerLatLng
+polygon_281.bindPopup("sergio sarnicola (BARCELONA, SPAIN)");
+map.addLayer(polygon_281)
+
+var polygon_282 = new L.RegularPolygonMarker(new L.LatLng(64.145981, -21.9422367), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_282._latlng = polygon_282._centerLatLng
+polygon_282.bindPopup("Soffia Gisladottir (Reykjavik, Iceland)");
+map.addLayer(polygon_282)
+
+var polygon_283 = new L.RegularPolygonMarker(new L.LatLng(40.5248319, -3.77156277545), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_283._latlng = polygon_283._centerLatLng
+polygon_283.bindPopup("Sonja Blanco (Madrid, Spain)");
+map.addLayer(polygon_283)
+
+var polygon_284 = new L.RegularPolygonMarker(new L.LatLng(44.436139, 26.1027436), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_284._latlng = polygon_284._centerLatLng
+polygon_284.bindPopup("sorina iordan (bucharest, romania)");
+map.addLayer(polygon_284)
+
+var polygon_285 = new L.RegularPolygonMarker(new L.LatLng(37.0333259, 60.7945524), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_285._latlng = polygon_285._centerLatLng
+polygon_285.bindPopup("spimpom (Here and there..)");
+map.addLayer(polygon_285)
+
+var polygon_286 = new L.RegularPolygonMarker(new L.LatLng(52.5170365, 13.3888599), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_286._latlng = polygon_286._centerLatLng
+polygon_286.bindPopup("spreephoto.de (Berlin, Germany)");
+map.addLayer(polygon_286)
+
+var polygon_287 = new L.RegularPolygonMarker(new L.LatLng(52.5170365, 13.3888599), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_287._latlng = polygon_287._centerLatLng
+polygon_287.bindPopup("st-sc (Berlin, germany)");
+map.addLayer(polygon_287)
+
+var polygon_288 = new L.RegularPolygonMarker(new L.LatLng(49.5941371, 17.2508295), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_288._latlng = polygon_288._centerLatLng
+polygon_288.bindPopup("Starej Grafik (Olomouc, Czech Republic)");
+map.addLayer(polygon_288)
+
+var polygon_289 = new L.RegularPolygonMarker(new L.LatLng(51.5072759, -0.1276597), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_289._latlng = polygon_289._centerLatLng
+polygon_289.bindPopup("steffanmacmillan (London, United Kingdom)");
+map.addLayer(polygon_289)
+
+var polygon_290 = new L.RegularPolygonMarker(new L.LatLng(52.5170365, 13.3888599), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_290._latlng = polygon_290._centerLatLng
+polygon_290.bindPopup("steffenz (Berlin, Germany)");
+map.addLayer(polygon_290)
+
+var polygon_291 = new L.RegularPolygonMarker(new L.LatLng(55.4597555, -4.6322863), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_291._latlng = polygon_291._centerLatLng
+polygon_291.bindPopup("stephen cosh (Ayr, Scotland)");
+map.addLayer(polygon_291)
+
+var polygon_292 = new L.RegularPolygonMarker(new L.LatLng(40.7305991, -73.9865812), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_292._latlng = polygon_292._centerLatLng
+polygon_292.bindPopup("stevensonck (New York, United States)");
+map.addLayer(polygon_292)
+
+var polygon_293 = new L.RegularPolygonMarker(new L.LatLng(12.8831063, 77.7501677), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_293._latlng = polygon_293._centerLatLng
+polygon_293.bindPopup("Steys (Planet Earth)");
+map.addLayer(polygon_293)
+
+var polygon_294 = new L.RegularPolygonMarker(new L.LatLng(64.08741105, -21.8247746611), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_294._latlng = polygon_294._centerLatLng
+polygon_294.bindPopup("Sverrir Thorolfsson (Kopavogur, Iceland)");
+map.addLayer(polygon_294)
+
+var polygon_295 = new L.RegularPolygonMarker(new L.LatLng(39.7837304, -100.4458825), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_295._latlng = polygon_295._centerLatLng
+polygon_295.bindPopup("sylvanbobcat (USA)");
+map.addLayer(polygon_295)
+
+var polygon_296 = new L.RegularPolygonMarker(new L.LatLng(50.8424835, 16.4870549), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_296._latlng = polygon_296._centerLatLng
+polygon_296.bindPopup("SZEWCZYK (Johnem) (Swidnica, Poland)");
+map.addLayer(polygon_296)
+
+var polygon_297 = new L.RegularPolygonMarker(new L.LatLng(1.2904527, 103.852038), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_297._latlng = polygon_297._centerLatLng
+polygon_297.bindPopup("T.JEFFREY (Singapore)");
+map.addLayer(polygon_297)
+
+var polygon_298 = new L.RegularPolygonMarker(new L.LatLng(50.084819, 14.4177247), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_298._latlng = polygon_298._centerLatLng
+polygon_298.bindPopup("Tabi**chu (Prague , Czech Republic)");
+map.addLayer(polygon_298)
+
+var polygon_299 = new L.RegularPolygonMarker(new L.LatLng(50.7358511, 7.1006599), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_299._latlng = polygon_299._centerLatLng
+polygon_299.bindPopup("Tafelzwerk (Bonn, Germany)");
+map.addLayer(polygon_299)
+
+var polygon_300 = new L.RegularPolygonMarker(new L.LatLng(-31.9527121, 115.8604796), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_300._latlng = polygon_300._centerLatLng
+polygon_300.bindPopup("tallkev (Perth, Australia)");
+map.addLayer(polygon_300)
+
+var polygon_301 = new L.RegularPolygonMarker(new L.LatLng(35.69004135, 139.510395073), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_301._latlng = polygon_301._centerLatLng
+polygon_301.bindPopup("tetsumaru (Tokyo, Japan)");
+map.addLayer(polygon_301)
+
+var polygon_302 = new L.RegularPolygonMarker(new L.LatLng(52.7954791, -0.540240236617), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_302._latlng = polygon_302._centerLatLng
+polygon_302.bindPopup("tgden (England)");
+map.addLayer(polygon_302)
+
+var polygon_303 = new L.RegularPolygonMarker(new L.LatLng(64.9841821, -18.1059013), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_303._latlng = polygon_303._centerLatLng
+polygon_303.bindPopup("th.egilson (away for a few days) (Iceland)");
+map.addLayer(polygon_303)
+
+var polygon_304 = new L.RegularPolygonMarker(new L.LatLng(1.2904527, 103.852038), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_304._latlng = polygon_304._centerLatLng
+polygon_304.bindPopup("Thainlin Tay (Singapore)");
+map.addLayer(polygon_304)
+
+var polygon_305 = new L.RegularPolygonMarker(new L.LatLng(52.5170365, 13.3888599), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_305._latlng = polygon_305._centerLatLng
+polygon_305.bindPopup("thb1970 (Berlin, Germany)");
+map.addLayer(polygon_305)
+
+var polygon_306 = new L.RegularPolygonMarker(new L.LatLng(-37.8142176, 144.9631608), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_306._latlng = polygon_306._centerLatLng
+polygon_306.bindPopup("The Globetrotting photographer (Melbourne, Australia)");
+map.addLayer(polygon_306)
+
+var polygon_307 = new L.RegularPolygonMarker(new L.LatLng(57.7072326, 11.9670171), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_307._latlng = polygon_307._centerLatLng
+polygon_307.bindPopup("The Hamster Factor (Gothenburg, Sweden)");
+map.addLayer(polygon_307)
+
+var polygon_308 = new L.RegularPolygonMarker(new L.LatLng(25.6440845, 85.906508), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_308._latlng = polygon_308._centerLatLng
+polygon_308.bindPopup("Thiago SL (BR)");
+map.addLayer(polygon_308)
+
+var polygon_309 = new L.RegularPolygonMarker(new L.LatLng(52.5170365, 13.3888599), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_309._latlng = polygon_309._centerLatLng
+polygon_309.bindPopup("Thomas Birke (Berlin, Germany)");
+map.addLayer(polygon_309)
+
+var polygon_310 = new L.RegularPolygonMarker(new L.LatLng(37.7789601, -122.419199), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_310._latlng = polygon_310._centerLatLng
+polygon_310.bindPopup("Thomas Hawk (San Francisco, USA)");
+map.addLayer(polygon_310)
+
+var polygon_311 = new L.RegularPolygonMarker(new L.LatLng(44.0581728, -121.3153096), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_311._latlng = polygon_311._centerLatLng
+polygon_311.bindPopup("Tim Gallivan (Bend, OR, US)");
+map.addLayer(polygon_311)
+
+var polygon_312 = new L.RegularPolygonMarker(new L.LatLng(54.7023545, -3.2765753), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_312._latlng = polygon_312._centerLatLng
+polygon_312.bindPopup("Tim Grist (UK)");
+map.addLayer(polygon_312)
+
+var polygon_313 = new L.RegularPolygonMarker(new L.LatLng(52.4813679, -1.8980726), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_313._latlng = polygon_313._centerLatLng
+polygon_313.bindPopup("tjdriscoll99 (Birmingham, UK)");
+map.addLayer(polygon_313)
+
+var polygon_314 = new L.RegularPolygonMarker(new L.LatLng(47.659216, 9.1750718), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_314._latlng = polygon_314._centerLatLng
+polygon_314.bindPopup("Tobias Knoch (Konstanz, Deutschland)");
+map.addLayer(polygon_314)
+
+var polygon_315 = new L.RegularPolygonMarker(new L.LatLng(48.4283327, -123.3649269), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_315._latlng = polygon_315._centerLatLng
+polygon_315.bindPopup("tylerforesthauser (Victoria, Canada)");
+map.addLayer(polygon_315)
+
+var polygon_316 = new L.RegularPolygonMarker(new L.LatLng(40.5248319, -3.77156277545), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_316._latlng = polygon_316._centerLatLng
+polygon_316.bindPopup("una cierta mirada (Madrid, Spain)");
+map.addLayer(polygon_316)
+
+var polygon_317 = new L.RegularPolygonMarker(new L.LatLng(59.3251172, 18.0710935), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_317._latlng = polygon_317._centerLatLng
+polygon_317.bindPopup("v.ir.g.il.e (Stockholm, Sweden)");
+map.addLayer(polygon_317)
+
+var polygon_318 = new L.RegularPolygonMarker(new L.LatLng(42.61946, -7.863112), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_318._latlng = polygon_318._centerLatLng
+polygon_318.bindPopup("vamitos (Galicia)");
+map.addLayer(polygon_318)
+
+var polygon_319 = new L.RegularPolygonMarker(new L.LatLng(60.3568769, 5.37306653035), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_319._latlng = polygon_319._centerLatLng
+polygon_319.bindPopup("VidarFoto (Bergen, Norway)");
+map.addLayer(polygon_319)
+
+var polygon_320 = new L.RegularPolygonMarker(new L.LatLng(40.7159357, -73.9868057), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_320._latlng = polygon_320._centerLatLng
+polygon_320.bindPopup("Vivienne Gucwa (Lower East Side, NYC, US)");
+map.addLayer(polygon_320)
+
+var polygon_321 = new L.RegularPolygonMarker(new L.LatLng(42.6384261, 12.674297), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_321._latlng = polygon_321._centerLatLng
+polygon_321.bindPopup("Volphoebe (Italy)");
+map.addLayer(polygon_321)
+
+var polygon_322 = new L.RegularPolygonMarker(new L.LatLng(45.4486, 5.55145), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_322._latlng = polygon_322._centerLatLng
+polygon_322.bindPopup("unknown (Bilieu, France)");
+map.addLayer(polygon_322)
+
+var polygon_323 = new L.RegularPolygonMarker(new L.LatLng(47.6038321, -122.3300624), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_323._latlng = polygon_323._centerLatLng
+polygon_323.bindPopup("warmsummernight (seattle, wa)");
+map.addLayer(polygon_323)
+
+var polygon_324 = new L.RegularPolygonMarker(new L.LatLng(49.822118, 19.0448936), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_324._latlng = polygon_324._centerLatLng
+polygon_324.bindPopup("Weisimel (unknown)");
+map.addLayer(polygon_324)
+
+var polygon_325 = new L.RegularPolygonMarker(new L.LatLng(38.7130574, -9.1380056), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_325._latlng = polygon_325._centerLatLng
+polygon_325.bindPopup("wirsindfrei (Lisboa, Portugal)");
+map.addLayer(polygon_325)
+
+var polygon_326 = new L.RegularPolygonMarker(new L.LatLng(52.2319237, 21.0067265), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_326._latlng = polygon_326._centerLatLng
+polygon_326.bindPopup("Wojtek Toman (http://hdrphotographer.blogspot.com) (Warsaw, Poland)");
+map.addLayer(polygon_326)
+
+var polygon_327 = new L.RegularPolygonMarker(new L.LatLng(49.2608944, -123.1139383), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_327._latlng = polygon_327._centerLatLng
+polygon_327.bindPopup("WSuvak (Vancouver, Canada)");
+map.addLayer(polygon_327)
+
+var polygon_328 = new L.RegularPolygonMarker(new L.LatLng(40.5248319, -3.77156277545), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_328._latlng = polygon_328._centerLatLng
+polygon_328.bindPopup("www.juliadavilalampe.com (Madrid, Spain)");
+map.addLayer(polygon_328)
+
+var polygon_329 = new L.RegularPolygonMarker(new L.LatLng(52.5170365, 13.3888599), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_329._latlng = polygon_329._centerLatLng
+polygon_329.bindPopup("Xindaan (Berlin, Germany)");
+map.addLayer(polygon_329)
+
+var polygon_330 = new L.RegularPolygonMarker(new L.LatLng(31.4887073, 109.318140892), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_330._latlng = polygon_330._centerLatLng
+polygon_330.bindPopup("Yellow ! (wuxi, China)");
+map.addLayer(polygon_330)
+
+var polygon_331 = new L.RegularPolygonMarker(new L.LatLng(52.5170365, 13.3888599), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_331._latlng = polygon_331._centerLatLng
+polygon_331.bindPopup("unknown (Berlin, Germany)");
+map.addLayer(polygon_331)
+
+var polygon_332 = new L.RegularPolygonMarker(new L.LatLng(25.0375167, 121.5637), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_332._latlng = polygon_332._centerLatLng
+polygon_332.bindPopup("Yubai K (Taipei Taiwan)");
+map.addLayer(polygon_332)
+
+var polygon_333 = new L.RegularPolygonMarker(new L.LatLng(52.2319237, 21.0067265), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_333._latlng = polygon_333._centerLatLng
+polygon_333.bindPopup("z a r i a n k a (Warsaw, Poland)");
+map.addLayer(polygon_333)
+
+var polygon_334 = new L.RegularPolygonMarker(new L.LatLng(51.4580216, -0.9673727), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_334._latlng = polygon_334._centerLatLng
+polygon_334.bindPopup("{CP} (Reading, United Kingdom)");
+map.addLayer(polygon_334)
+
+var polygon_335 = new L.RegularPolygonMarker(new L.LatLng(43.6529206, -79.3849008), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_335._latlng = polygon_335._centerLatLng
+polygon_335.bindPopup("~EvidencE~ (toronto, canada)");
+map.addLayer(polygon_335)
+
+var polygon_336 = new L.RegularPolygonMarker(new L.LatLng(52.7954791, -0.540240236617), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_336._latlng = polygon_336._centerLatLng
+polygon_336.bindPopup("~green tea ice cream~ (England)");
+map.addLayer(polygon_336)
+
+var polygon_337 = new L.RegularPolygonMarker(new L.LatLng(46.603354, 1.8883335), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_337._latlng = polygon_337._centerLatLng
+polygon_337.bindPopup("unknown (FR)");
+map.addLayer(polygon_337)
+
+var polygon_338 = new L.RegularPolygonMarker(new L.LatLng(55.7516147, 37.6187012), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_338._latlng = polygon_338._centerLatLng
+polygon_338.bindPopup("unknown (Moscow)");
+map.addLayer(polygon_338)
+
+var polygon_339 = new L.RegularPolygonMarker(new L.LatLng(-36.50775635, 174.540946482), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_339._latlng = polygon_339._centerLatLng
+polygon_339.bindPopup("unknown (Auckland, New Zealand)");
+map.addLayer(polygon_339)
+
+var polygon_340 = new L.RegularPolygonMarker(new L.LatLng(54.7023545, -3.2765753), {
+    color: '#0063db',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#0063db',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 4
+});
+polygon_340._latlng = polygon_340._centerLatLng
+polygon_340.bindPopup("unknown (United Kingdom)");
+map.addLayer(polygon_340)
+
+
+
+
+
+
+</script>
+
+</body>
